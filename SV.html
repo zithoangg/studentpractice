@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SV.css">
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>Luyện tập cho SV</title>
+</head>
+
+<body>
+    <main>
+        <div class="title">
+            <h3>LUYỆN TẬP CHO SINH VIÊN</h3>
+        </div>
+        <div class="qaContainer">
+            <div class="upHalf">
+                <div class="qContainer">
+                    <div class="qBox1">
+                        <div class="qInfo" id="10000">
+                            <div class="level" id="100">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="1" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="20000">
+                            <div class="level" id="200">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="2" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="30000">
+                            <div class="level" id="300">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="3" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="40000">
+                            <div class="level" id="400">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="4" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="50000">
+                            <div class="level" id="500">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="5" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="60000">
+                            <div class="level" id="600">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="6" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="70000">
+                            <div class="level" id="700">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="7" onclick="show(this);">Start</button>
+                    </div>
+                    <div class="qBox1">
+                        <div class="qInfo" id="80000">
+                            <div class="level" id="800">
+                                <div class="star">
+                                    <img src="images/bluestar.png" alt="level">
+                                </div>
+                                <div class="reward">
+                                    Số điểm: 2
+                                </div>
+                            </div>
+                        </div>
+                        <button class="qButton1" id="8" onclick="show(this);">Start</button>
+                    </div>
+
+                </div>
+                <div class="atsContainer">
+                    <div class="atBox">
+                        <div class="aBox">
+                            <p class="ans" id="ans1"><b>Luật chơi</b><br>
+                                - 1 thành viên trong tổ đại diện để tham gia ném phi tiêu chọn câu hỏi, trúng lucky
+                                balloon sẽ được cộng điểm<br><br>
+                                - Bóng với số thứ tự từ 1 đến 3 tương đương với độ khó của câu hỏi
+                                dễ-trung bình-khó và mức điểm 2-4-6 (quy thành phần thưởng tương ứng)<br><br>
+                                - Các sự trợ giúp: 50/50 tốn 3 điểm, hỏi ý kiến 3 người tốn 4 điểm<br><br>
+                                - Sau thời gian quy định 15 giây, nếu không đưa ra được đáp án sẽ mất lượt, các tổ
+                                còn lại có thể giơ tay để giành quyền trả lời</p>
+                            <p class="ans" id="ans2"></p>
+                            <p class="ans" id="ans3"></p>
+                            <p class="ans" id="ans4"></p>
+                        </div>
+                        <div class="tBox">
+                            <h2 class="timer" id="timer"></h2>
+                        </div>
+                    </div>
+                    <div class="sBox">
+                        <div class="grCanvasBox">
+                            <div class="btnBox">
+                                <button class="addButton" id="addButton1" onclick="add1();"><b>+</b></button>
+                                <button class="addButton" id="addButton2" onclick="add2();"><b>+</b></button>
+                                <button class="addButton" id="addButton3" onclick="add3();"><b>+</b></button>
+                                <button class="addButton" id="addButton4" onclick="add4();"><b>+</b></button>
+                            </div>
+                            <p class="group">Tổ 1 <br>Tổ 2 <br>Tổ 3 <br> Tổ 4</p>
+                            <canvas class="canvas" id="canvas"></canvas>
+                            <div class="scoreBoard">
+                                <p class="score" id="score1">0</p>
+                                <p class="score" id="score2">0</p>
+                                <p class="score" id="score3">0</p>
+                                <p class="score" id="score4">0</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="downHalf">
+                <div class="qBox2">
+                    <div class="qInfo" id="90000">
+                        <div class="level" id="900">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="9" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="100000">
+                        <div class="level" id="1000">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="10" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="110000">
+                        <div class="level" id="1100">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="11" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="120000">
+                        <div class="level" id="1200">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="12" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="130000">
+                        <div class="level" id="1300">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="13" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="140000">
+                        <div class="level" id="1400">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="14" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox2">
+                    <div class="qInfo" id="150000">
+                        <div class="level" id="1500">
+                            <div class="star">
+                                <img src="images/yellowstar.png" alt="level">
+                                <img src="images/yellowstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 4
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton2" id="15" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox3">
+                    <div class="qInfo" id="160000">
+                        <div class="level" id="1600">
+                            <div class="star">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 6
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton3" id="16" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox3">
+                    <div class="qInfo" id="170000">
+                        <div class="level" id="1700">
+                            <div class="star">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 6
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton3" id="17" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox3">
+                    <div class="qInfo" id="180000">
+                        <div class="level" id="1800">
+                            <div class="star">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 6
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton3" id="18" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox3">
+                    <div class="qInfo" id="190000">
+                        <div class="level" id="1900">
+                            <div class="star">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 6
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton3" id="19" onclick="show(this);">Start</button>
+                </div>
+                <div class="qBox3">
+                    <div class="qInfo" id="200000">
+                        <div class="level" id="2000">
+                            <div class="star">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                                <img src="images/redstar.png" alt="level">
+                            </div>
+                            <div class="reward">
+                                Số điểm: 6
+                            </div>
+                        </div>
+                    </div>
+                    <button class="qButton3" id="20" onclick="show(this);">Start</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+    <script src="Sinh.js" type="text/javascript"></script>
+
+</body>
+
+</html>
